@@ -2,7 +2,7 @@ import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn} from "ty
 
 import Person from "./Person";
 
-@Entity()
+@Entity('Message')
 export default class Message{
 
     @PrimaryGeneratedColumn()

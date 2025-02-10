@@ -34,10 +34,10 @@ VALUES
 ('Carinho',  'Contém: 3 fotos, 1 frase, 2 dias de acesso', 9.99),
 ('Encanto',  'Contém: 6 fotos, 3 frase, 7 dias de acesso, música', 19.99);
 
-INSERT INTO Person (name, email, message, planId, payment, customUrl) 
+INSERT INTO Person (name, email, planId, payment, customUrl) 
 VALUES 
-('João Silva', 'joao@email.com', 1, 0, 'joao-personalizado'),
-('Alexsander Kafka', 'alex@gmail.com', 2, 1, 'alex-kafka');
+('João Silva', 'joao@email.com', 1, 1, '/1/joao-personalizado'),
+('Alexsander Kafka', 'alex@gmail.com', 2, 1, '/2/alex-kafka');
 
 INSERT INTO Images (url, personId) 
 VALUES 

@@ -1,7 +1,7 @@
 import { PrimaryGeneratedColumn, Column, ManyToOne, Entity, JoinColumn } from "typeorm";
 import Person from "./Person";
 
-@Entity()
+@Entity('Images')
 export default class Images{
 
     @PrimaryGeneratedColumn()

@@ -2,7 +2,7 @@ import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn} from "typ
 
 import Plan from "./Plan";
 
-@Entity()
+@Entity('Person')
 export default class Person{
 
     @PrimaryGeneratedColumn()
