@@ -99,4 +99,4 @@ npm start
 
 Alexsander Kafka
 
-[https://www.linkedin.com/in/wmazoni](https://www.linkedin.com/in/alexsander-kafka-525a87251/)]
+https://www.linkedin.com/in/alexsander-kafka-525a87251/
