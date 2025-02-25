@@ -20,7 +20,7 @@ A aplicação consiste na criação de um exemplo de micro saas, o usuário esco
 ![web-3](https://github.com/alexsanderkafka/mimou/blob/main/assets-readme/gift-page-web.png)
 
 ## DER - Diagrama de entidade relacional
-![der]
+![der](https://github.com/alexsanderkafka/mimou/blob/main/assets-readme/der.png)
 
 # Tecnologias utilizadas
 ## Back end
