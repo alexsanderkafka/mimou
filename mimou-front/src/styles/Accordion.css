@@ -1,0 +1,54 @@
+.accordion {
+  border: 3px solid #F08080;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 50%;
+  margin-bottom: 20px;
+
+  transition: 0.3s;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: white;
+  cursor: pointer;
+  color: #343A40;
+}
+
+.accordion-header h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #343A40;
+
+  font-weight: 500;
+}
+
+.arrow {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+  color: #343A40;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  padding: 15px 20px;
+  border-top: 3px solid #F08080;
+}
+
+.accordion-content p {
+  margin: 0;
+  color: #343A40;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .accordion{
+    width: 80%;
+  }
+}

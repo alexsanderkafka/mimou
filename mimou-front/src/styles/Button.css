@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.custom-button-one{
+    width: 275px;
+    height: auto;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', serif;
+    border-radius: 5px;
+    font-weight: 600px;
+    color: #FFFF;
+    background-color: #F08080;
+    border: none;
+    transition: 0.3s;
+}
+
+.custom-button-two{
+    width: 527px;
+    height: auto;
+    font-size: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', serif;
+    border-radius: 5px;
+    font-weight: 400;
+    color: #FFFF;
+    background-color: #F08080;
+    border: none;
+    transition: 0.3s;
+}
+
+.custom-button-one:hover,
+.custom-button-two:hover{
+    background-color: #BF6064;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .custom-button-two{
+        width: 275px;
+        font-size: 20px;
+    }
+}

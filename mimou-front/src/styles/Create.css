@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container{
+  width: 100%;
+  height: auto;
+  margin-top: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 95px;
+
+  flex: 1;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 549px;
+  font-family: 'Montserrat', serif;
+}
+
+.base-label{
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 15px; /*Qualque coisa remove do container - 15*/
+}
+
+input, textarea{
+  all: unset;
+  border: 2px solid;
+  margin-bottom: 15px;
+  font-size: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  border-color: #F08080;
+  margin-top: 2px;
+}
+
+input[type="text"], 
+input[type="email"]{
+  max-width: 465px;
+}
+
+textarea{
+  resize: vertical;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.radio-button{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', serif;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.radio-button input{
+  margin-right: 6px;
+  width: 30px;
+  height: 30px;
+}
+
+input[type="file"]{
+  margin-bottom: 40px;
+}
+
+.container-preview{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0; 
+  margin: 0;
+}
+
+ #emulator{
+    width: 523px;
+    max-width: 100%;
+    height: 625px;
+    border: 3px solid #F08080;
+    border-radius: 5px;
+    padding: 3px;
+
+    overflow: hidden;
+
+    scroll-behavior: smooth;
+  
+    overflow-y: scroll;
+    /*white-space: nowrap;*/
+}
+
+.box-header-emulator{
+    width: 100%;
+    height: 46px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 26px;
+    margin-bottom: 12px;
+
+    justify-content: space-evenly;
+}
+
+#url-emulator{
+    width: 259px;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.19);
+    border-radius: 23px;
+    padding-left: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 10px;
+}
+
+#url-emulator span{
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    padding-right: 10px;
+
+    white-space: nowrap;
+}
+
+#url-emulator span::-webkit-scrollbar {
+    display: none;
+}
+
+.tab{
+    width: 24px;
+    height: 24px;
+    border: 3px solid #BF6064;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BF6064;
+    font-weight: 600;
+}
+
+#screen{
+  width: 100%;
+  height: auto;
+
+  border-radius: 5px;
+  background-image: url('../assets/background-gift.png');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 50px;
+  padding: 300px 0px;
+
+}
+
+/* Personalizando a barra de rolagem */
+#screen::-webkit-scrollbar {
+  width: 5px;
+  height: 5px; /* Largura da barra de rolagem */
+}
+
+#screen::-webkit-scrollbar-thumb {
+  background-color: #343A40; /* Cor da parte que pode ser arrastada */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+#screen::-webkit-scrollbar-thumb:hover {
+  background-color: #888; /* Cor quando o mouse está sobre a barra de rolagem */
+}
+
+#screen::-webkit-scrollbar-track {
+  background-color: #F08080; /* Cor de fundo da trilha */
+  border-radius: 5px;
+}
+
+/*end*/
+
+.box-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.config-icon{
+  width: 32px;
+  height: 30px;
+}
+
+#container-file-button{
+  margin-bottom: 38px;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.custom-file-button{
+  background-color: #FFF;
+  border: 2px solid #F08080;
+  border-radius: 5px;
+  height: 49px;
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Montserrat', serif;
+  font-size: 20px;
+
+  cursor: pointer;
+  gap: 10px;
+}
+
+#container-loading{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+
+#loading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading h1{
+  margin-top: 30px;
+  color: #343A40;
+}
+
+@media only screen and (max-width: 768px) {
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-forms{
+    width: 80%;
+    margin-bottom: 105px;
+  }
+
+  .container-forms form{
+    width: 100%;
+  }
+
+  .container-forms button{
+    width: 100%;
+  }
+
+  .container-preview{
+    width: 100%;
+  }
+
+  #emulator{
+    width: 80%;
+  }
+
+  .box-header-emulator img{
+    display: none;
+  }
+
+  #url-emulator img{
+    display: flex;
+  }
+
+  .tab{
+    display: none;
+  }
+
+  .config-icon{
+    margin-left: 10px;
+  }
+}

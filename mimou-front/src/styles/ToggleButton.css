@@ -1,0 +1,40 @@
+/*Toggle button*/
+.container-toggle-button{
+    width: 489px;
+    height: 43px;
+    border: 2px solid #F08080;
+    border-radius: 5px;
+  
+    display: flex;
+    flex-direction: row;
+  
+    padding: 3px;
+}
+
+.toggle-button{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+    border-color: transparent;
+    
+    font-weight: 300;
+    transition: 0.2s;
+}
+
+.active{
+    background-color: #BF6064;    
+    border: 1px solid #BF6064;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .toggle-button{
+        font-size: 14px;
+    }
+}

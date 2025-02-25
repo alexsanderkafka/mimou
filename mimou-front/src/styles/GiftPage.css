@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+#gift-page{
+    background-image: url('../assets/background-gift.png');/*linear-gradient(rgba(209, 207, 192, 0.9), rgba(209, 207, 192, 0.9)), url('../assets/background-gift.png');*/
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f080806e;
+
+
+    gap: 200px;
+}
+
+
+.card-photos{
+    width: 300px;
+    height: 400px;
+    background-color: #BF6064;
+}
+
+@media only screen and (max-width: 768px) {
+    #gift-page{
+        flex-direction: column;
+        gap: 50px;
+        padding: 300px 0px
+    }
+    
+}
