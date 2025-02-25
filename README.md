@@ -2,6 +2,12 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/alexsanderkafka/mimou/blob/main/LICENSE) 
 
 # Sobre o projeto
+A aplicação consiste na criação de um exemplo de micro saas, o usuário escolhe entre dois planos e preenche seus dados (frases, fotos e e-mail), que são enviados para o back-end para validação. Após a confirmação das informações, o usuário é redirecionado para a etapa de pagamento. Finalizado o pagamento e a confirmação por parte da aplicação o usuário recebe via e-mail o link de acesso para o site e o QRCode.
+
+# Integrações
+- Firebase storage
+- Mercado pago
+- E-mail
 
 ## Layout Responsivo
 ![mobile-1](https://github.com/alexsanderkafka/mimou/blob/main/assets-readme/lp-mobile.gif) ![mobile-2](https://github.com/alexsanderkafka/mimou/blob/main/assets-readme/register-page-mobile.gif) ![mobile-3](https://github.com/alexsanderkafka/mimou/blob/main/assets-readme/gift-page-mobile.gif)
@@ -76,6 +82,11 @@ npm install
 
 # executar o projeto
 npm run dev
+
+# Ou você pode utilizar o docker
+cd mimou-back
+docker-compose up -d
+
 ```
 
 ## Front end web
